@@ -12,6 +12,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #000;
+  overflow-x: hidden;
   /* background-image: url("./assets/images/home_bg.png"); */
 }
 
@@ -2044,3 +2045,9 @@ html, body {
   }
 }
 /* fireflies end */
+
+canvas{
+  position: absolute;
+  top: 0;
+  overflow-y: hidden;
+}
