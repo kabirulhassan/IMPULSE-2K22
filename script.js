@@ -223,3 +223,9 @@ function update() {
 }
 update();
 
+setInterval(function(){
+  var container = document.getElementById('rotatingText');
+  var tmp = container.innerHTML;
+  container.innerHTML= tmp;
+  }, 5500 // length of the whole show in milliseconds
+  );
