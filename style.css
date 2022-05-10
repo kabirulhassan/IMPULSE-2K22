@@ -143,7 +143,15 @@ nav {
 
 .nav-logo :hover,
 .nav-links :hover {
-  color: palevioletred;
+  /* text-shadow: 2px 2px 3px white; */
+  /* -webkit-text-stroke: 1px white; */
+  color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+  background-image: url(/assets/images/fire.gif);
+  background-size: cover;
+  background-blend-mode: soft-light;
+  /* color: palevioletred; */
 }
 
 .nav-links li {
@@ -2071,7 +2079,7 @@ canvas{
 	line-height:2
 }
 
-h1 {
+.rejuvenation {
 	background-image: url("/assets/images/fire.gif");
 	background-size: contain;
   /* filter: blur(5px); */
