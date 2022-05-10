@@ -2046,8 +2046,12 @@ html, body {
 }
 /* fireflies end */
 
+/* home canvas */
 canvas{
   position: absolute;
   top: 0;
   overflow-y: hidden;
 }
+
+/* home canvas ends */
+
