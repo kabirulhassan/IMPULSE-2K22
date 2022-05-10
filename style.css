@@ -155,7 +155,7 @@ nav {
   color: transparent;
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
-  background-image: url(/assets/images/fire.gif);
+  background-image: url(./assets/images/fire.gif);
   background-size: cover;
   background-blend-mode: soft-light;
   /* color: palevioletred; */
@@ -2096,7 +2096,7 @@ canvas{
   font-weight: 900;
 }
 .rejuvenation div{
-	background-image: url("/assets/images/fire.gif");
+	background-image: url("./assets/images/fire.gif");
 	background-size: contain;
   /* filter: blur(5px); */
   letter-spacing: 0.5rem;
