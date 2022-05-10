@@ -87,12 +87,22 @@ setTimeout(function () {
 popolate(max_particles);
 
 var tela = document.createElement('canvas');
+tela.setAttribute('id', 'canvas');
 tela.width = $(window).width();
 tela.height = $(window).height();
 $("body").append(tela);
 
-var canvas = tela.getContext('2d');
+function resize(){    
+  $("#canvas").outerHeight($(window).height()-$("#canvas").offset().top- Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight()));
+}
+$(document).ready(function(){
+  resize();
+  $(window).on("resize", function(){                      
+      resize();
+  });
+});
 
+var canvas = tela.getContext('2d');
 class Particle {
   constructor(canvas) {
     let random = Math.random();
