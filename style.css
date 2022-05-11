@@ -230,7 +230,7 @@ footer a {
   .burger {
     display: block;
   }
-  .rotatingText-adjective {
+  .rotatingText-motto {
     font-size: 1.5rem !important;
   }
 }
@@ -2088,8 +2088,6 @@ canvas{
 	font-family: "Roboto", sans-serif;
 	text-align: center;
 	color: #FFF;
-	/* display: flex; */
-	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	/* height: 100vh; */
@@ -2124,15 +2122,7 @@ canvas{
     content: "REJUVENATION";
 }
 
-.motto{
-  color: #ff5b38;
-  font-size: 2.5rem;
-  font-weight: bold;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  text-shadow: 2px 2px 5px black;
-}
+
 /* styling my button */
 
 .white-mode {
@@ -2154,8 +2144,6 @@ canvas{
 }
 
 .rotatingText {
-  align-items: center;
-  display: flex;
   height: 5vh;
   /* height: 100vh; */
   text-align: center;
@@ -2165,17 +2153,13 @@ canvas{
   position: relative;
   width: 100%;
 }
-@media (min-width: 768px) {
-  .rotatingText-description {
-    font-size: 18px;
-  }
-}
 
-.rotatingText-adjective {
+
+.rotatingText-motto {
   animation-iteration-count: infinite;
   font-family: "Open Sans", sans-serif;
   font-size: 3rem;
-  left: 0;
+  left: 20px;
   margin-bottom: 0;
   margin-top: 10px;
   opacity: 0;
@@ -2187,15 +2171,15 @@ canvas{
   letter-spacing: 1.5rem;
 }
 
-.rotatingText-adjective:nth-of-type(1) {
+.rotatingText-motto:nth-of-type(1) {
   -webkit-animation: rotate-text-up 1.5s 0.75s;
           animation: rotate-text-up 1.5s 0.75s;
 }
-.rotatingText-adjective:nth-of-type(2) {
+.rotatingText-motto:nth-of-type(2) {
   -webkit-animation: rotate-text-up 1.5s 2s;
           animation: rotate-text-up 1.5s 2s;
 }
-.rotatingText-adjective:nth-of-type(3) {
+.rotatingText-motto:nth-of-type(3) {
   -webkit-animation: fade-text-in 1.5s 3.25s forwards;
           animation: fade-text-in 1.5s 3.25s forwards;
 }
@@ -2253,4 +2237,59 @@ canvas{
 .member{
   min-width: 100px;
   height: 20vh;
+}
+
+
+.owl-carousel .owl-nav div.owl-prev,
+.owl-carousel .owl-nav div.owl-next {
+  color: white;
+  font-size: 30px;
+  margin-top: -20px;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  line-height: 39px;
+  opacity: 0;
+  border: none;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+.owl-carousel .owl-nav div.owl-prev {
+  left: 10%;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+}
+.owl-carousel .owl-nav div.owl-next {
+  right: 10%;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+}
+.owl-carousel:hover .owl-nav div.owl-next {
+  right: -2%;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  opacity: 1;
+}
+.owl-carousel:hover .owl-nav div.owl-prev {
+  left: -2%;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  opacity: 1;
+}
+.owl-carousel:hover .owl-nav div.owl-next:hover,
+.owl-carousel:hover .owl-nav div.owl-prev:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 40px;
 }
