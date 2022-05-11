@@ -2249,9 +2249,8 @@ canvas{
     transform: translate3d(0, 0, 0);
   }
 }
-.twitter {
-  bottom: 0;
-  position: fixed;
-  right: 0;
-  width: 50px;
+
+.member{
+  min-width: 100px;
+  height: 20vh;
 }
