@@ -230,6 +230,9 @@ footer a {
   .burger {
     display: block;
   }
+  .rotatingText-adjective {
+    font-size: 1.5rem !important;
+  }
 }
 
 .nav-active {
@@ -2069,6 +2072,7 @@ canvas{
   top: 0;
   overflow-y: hidden;
   width: 100%;
+  opacity: 0.5;
 }
 
 /* home canvas ends */
@@ -2155,13 +2159,6 @@ canvas{
   position: relative;
   width: 100%;
 }
-
-.rotatingText-description {
-  font-family: "Georgia", serif;
-  font-style: italic;
-  font-size: 14px;
-  margin: 0;
-}
 @media (min-width: 768px) {
   .rotatingText-description {
     font-size: 18px;
@@ -2171,22 +2168,19 @@ canvas{
 .rotatingText-adjective {
   animation-iteration-count: infinite;
   font-family: "Open Sans", sans-serif;
-  font-size: 40px;
+  font-size: 3rem;
   left: 0;
   margin-bottom: 0;
-  margin-top: 30px;
+  margin-top: 10px;
   opacity: 0;
   position: absolute;
   right: 0;
   text-align: center;
   text-transform: uppercase;
   top: 0;
+  letter-spacing: 1.5rem;
 }
-@media (min-width: 768px) {
-  .rotatingText-adjective {
-    font-size: 70px;
-  }
-}
+
 .rotatingText-adjective:nth-of-type(1) {
   -webkit-animation: rotate-text-up 1.5s 0.75s;
           animation: rotate-text-up 1.5s 0.75s;

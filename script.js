@@ -204,7 +204,8 @@ function createSphera() {
 
 function clear() {
   canvas.globalAlpha = 0.08;
-  canvas.fillStyle = '#110031';
+  // canvas.fillStyle = '#110031';
+  canvas.fillStyle = '#000';
   canvas.fillRect(0, 0, tela.width, tela.height);
   canvas.globalAlpha = 1;
 }
