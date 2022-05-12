@@ -230,3 +230,29 @@ setInterval(function(){
   container.innerHTML= tmp;
   }, 5500 // length of the whole show in milliseconds
   );
+  $(".owl1").owlCarousel({
+    items: 3,
+    loop: true,
+    nav: false,
+    margin: 22,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
+    dots: true,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      800: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+        loop: true,
+      },
+    },
+  });

@@ -148,7 +148,6 @@ nav {
   letter-spacing: 2px;
 }
 
-.nav-logo :hover,
 .nav-links :hover {
   /* text-shadow: 2px 2px 3px white; */
   /* -webkit-text-stroke: 1px white; */
@@ -2078,7 +2077,7 @@ canvas{
   top: 0;
   overflow-y: hidden;
   width: 100%;
-  opacity: 0.5;
+  opacity: .5;
 }
 
 /* home canvas ends */
@@ -2249,9 +2248,141 @@ canvas{
     transform: translate3d(0, 0, 0);
   }
 }
-.twitter {
-  bottom: 0;
-  position: fixed;
-  right: 0;
-  width: 50px;
+
+#events {
+  height: 100vh;
+  font-family: "Amaranth", sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.owl-carousel .owl-nav div.owl-prev,
+.owl-carousel .owl-nav div.owl-next {
+  color: white;
+  font-size: 30px;
+  margin-top: -20px;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  line-height: 39px;
+  opacity: 0;
+  border: none;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+.owl-carousel .owl-nav div.owl-prev {
+  left: 10%;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+}
+.owl-carousel .owl-nav div.owl-next {
+  right: 10%;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+}
+.owl-carousel:hover .owl-nav div.owl-next {
+  right: -2%;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  opacity: 1;
+}
+.owl-carousel:hover .owl-nav div.owl-prev {
+  left: -2%;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  opacity: 1;
+}
+.owl-carousel:hover .owl-nav div.owl-next:hover,
+.owl-carousel:hover .owl-nav div.owl-prev:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-title {
+    font-size: 20px !important;
+  }
+  .card-text {
+    font-size: 17px !important;
+  }
+  .card-text {
+    min-height: 75px !important;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .card-title {
+    font-size: 18px !important;
+  }
+  .card-text {
+    min-height: 80px !important;
+    margin: 0;
+    font-size: 16px !important;
+  }
+}
+
+.heading-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.display-4 {
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  font-family: "among-us" !important;
+  letter-spacing: 5px;
+  font-size: 70px !important;
+}
+#event_card {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card,
+.card-img {
+  padding: 5px;
+  border-radius: 5% !important;
+}
+
+.card-img-top {
+  border: #ffffff solid 3px;
+  border-radius: 50% !important;
+}
+.card-title,
+.card-text {
+  text-shadow: 2px 2px 5px black;
+  color: white;
+  font-size: 22px;
+}
+.card-text {
+  min-height: 70px !important;
+}
+.card-img {
+  height: 350px;
+}
+
+.card-body a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+.display-5 {
+  text-shadow: 2px 2px 5px black;
 }
