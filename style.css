@@ -2383,6 +2383,31 @@ canvas{
   color: #ffffff !important;
   text-decoration: none !important;
 }
+.heading-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
 .display-5 {
   text-shadow: 2px 2px 5px black;
+}
+.display-4 {
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  font-family: "among-us" !important;
+  letter-spacing: 5px;
+  font-size: 70px !important;
+}
+
+#tchr {
+  height: 250px;
+  width: 250px;
+  border: red solid 5px;
+  border-radius: 50%;
+  padding: 0px !important;
+  z-index: 2;
 }
