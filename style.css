@@ -47,6 +47,12 @@ div{
   background-size: cover;
   height: 100vh;
 }
+#members {
+  font-family: "Amaranth", sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 .logo img{
   height: 50vh;
   /* margin-bottom: -10vh; */
