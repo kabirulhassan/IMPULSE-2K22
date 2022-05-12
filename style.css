@@ -235,7 +235,7 @@ footer a {
   .burger {
     display: block;
   }
-  .rotatingText-motto {
+  .rotatingText-adjective {
     font-size: 1.5rem !important;
   }
 }
@@ -2093,6 +2093,8 @@ canvas{
 	font-family: "Roboto", sans-serif;
 	text-align: center;
 	color: #FFF;
+	/* display: flex; */
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	/* height: 100vh; */
@@ -2127,7 +2129,15 @@ canvas{
     content: "REJUVENATION";
 }
 
-
+.motto{
+  color: #ff5b38;
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  text-shadow: 2px 2px 5px black;
+}
 /* styling my button */
 
 .white-mode {
@@ -2149,6 +2159,8 @@ canvas{
 }
 
 .rotatingText {
+  align-items: center;
+  display: flex;
   height: 5vh;
   /* height: 100vh; */
   text-align: center;
@@ -2158,13 +2170,17 @@ canvas{
   position: relative;
   width: 100%;
 }
+@media (min-width: 768px) {
+  .rotatingText-description {
+    font-size: 18px;
+  }
+}
 
-
-.rotatingText-motto {
+.rotatingText-adjective {
   animation-iteration-count: infinite;
   font-family: "Open Sans", sans-serif;
   font-size: 3rem;
-  left: 20px;
+  left: 0;
   margin-bottom: 0;
   margin-top: 10px;
   opacity: 0;
@@ -2176,15 +2192,15 @@ canvas{
   letter-spacing: 1.5rem;
 }
 
-.rotatingText-motto:nth-of-type(1) {
+.rotatingText-adjective:nth-of-type(1) {
   -webkit-animation: rotate-text-up 1.5s 0.75s;
           animation: rotate-text-up 1.5s 0.75s;
 }
-.rotatingText-motto:nth-of-type(2) {
+.rotatingText-adjective:nth-of-type(2) {
   -webkit-animation: rotate-text-up 1.5s 2s;
           animation: rotate-text-up 1.5s 2s;
 }
-.rotatingText-motto:nth-of-type(3) {
+.rotatingText-adjective:nth-of-type(3) {
   -webkit-animation: fade-text-in 1.5s 3.25s forwards;
           animation: fade-text-in 1.5s 3.25s forwards;
 }
