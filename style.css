@@ -7,7 +7,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 
 body {
   background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)), url("https://images.unsplash.com/photo-1504680177321-2e6a879aac86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
@@ -2159,16 +2161,16 @@ canvas{
 }
 
 .rotatingText {
-  align-items: center;
-  display: flex;
+  align-items: center !important;
   height: 5vh;
   /* height: 100vh; */
   text-align: center;
 }
 
 .rotatingText-content {
+  text-align: center !important;
   position: relative;
-  width: 100%;
+  margin: auto 0;
 }
 @media (min-width: 768px) {
   .rotatingText-description {
@@ -2180,16 +2182,18 @@ canvas{
   animation-iteration-count: infinite;
   font-family: "Open Sans", sans-serif;
   font-size: 3rem;
-  left: 0;
+  /* left: 0; */
   margin-bottom: 0;
   margin-top: 10px;
+  width: 100%;
   opacity: 0;
   position: absolute;
-  right: 0;
+  /* right: 0; */
   text-align: center;
   text-transform: uppercase;
   top: 0;
   letter-spacing: 1.5rem;
+  text-indent: 1.5rem;
 }
 
 .rotatingText-adjective:nth-of-type(1) {
@@ -2370,7 +2374,7 @@ canvas{
 
 .card-img-top {
   border: #ffffff solid 3px;
-  border-radius: 50% !important;
+  border-radius: 5% !important;
 }
 .card-title,
 .card-text {
