@@ -281,3 +281,29 @@ setInterval(function(){
       },
     },
   });
+  $(".owl3").owlCarousel({
+    items: 3,
+    loop: true,
+    margin: 22,
+    autoplay: true,
+    autoplayTimeout: 2000,
+    autoplayHoverPause: true,
+    nav: true,
+    navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
+    dots: false,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+        loop: true,
+      },
+      1000: {
+        autoWidth: false,
+        items: 3,
+        loop: false,
+      },
+    },
+  });

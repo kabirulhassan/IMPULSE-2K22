@@ -162,6 +162,7 @@ nav {
   color: transparent;
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
+  background-clip: text;
   background-image: url(./assets/images/fire.gif);
   background-size: cover;
   background-blend-mode: soft-light;
@@ -2118,6 +2119,7 @@ canvas{
   /* filter: blur(5px); */
   letter-spacing: 0.5rem;
 	color: transparent;
+  background-clip: text;
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
 	/* font-size: 10vw; */
@@ -2285,6 +2287,7 @@ canvas{
 }
 .owl-carousel .owl-nav div.owl-prev {
   left: 10%;
+  transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
@@ -2292,6 +2295,7 @@ canvas{
 }
 .owl-carousel .owl-nav div.owl-next {
   right: 10%;
+  transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
@@ -2299,6 +2303,7 @@ canvas{
 }
 .owl-carousel:hover .owl-nav div.owl-next {
   right: -2%;
+  transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
@@ -2307,6 +2312,7 @@ canvas{
 }
 .owl-carousel:hover .owl-nav div.owl-prev {
   left: -2%;
+  transition: 0.4s;
   -webkit-transition: 0.4s;
   -moz-transition: 0.4s;
   -o-transition: 0.4s;
@@ -2332,6 +2338,16 @@ canvas{
     min-height: 75px !important;
     margin: 0;
   }
+}
+.convenor{
+  text-align: center;
+}
+.convenor img{
+  max-width: 18rem;
+}
+.convenor-owl{
+  max-width: 80vw !important;
+  margin: 0 auto;
 }
 @media screen and (max-width: 1024px) {
   .card-title {
@@ -2366,15 +2382,19 @@ canvas{
   gap: 10px;
 }
 
+.card{
+  align-items: center;
+}
+
 .card,
 .card-img {
   padding: 5px;
-  border-radius: 5% !important;
+  border-radius: 5%;
 }
 
 .card-img-top {
   border: #ffffff solid 3px;
-  border-radius: 5% !important;
+  border-radius: 5%;
 }
 .card-title,
 .card-text {
@@ -2416,8 +2436,29 @@ canvas{
 #tchr {
   height: 250px;
   width: 250px;
-  border: red solid 5px;
-  border-radius: 50%;
+  border: white solid 2px;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
   padding: 0px !important;
   z-index: 2;
+}
+
+.convenor img{
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%; 
+}
+
+.principal-row{
+  max-width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  
+.principal-row{
+  flex-direction: column;
+  max-width: 100vw;
+}
 }
