@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amaranth&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -12,7 +12,8 @@ html {
 }
 
 body {
-  background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)), url("https://images.unsplash.com/photo-1504680177321-2e6a879aac86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("https://images.unsplash.com/photo-1504680177321-2e6a879aac86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
   /* background-image: url(https://images.unsplash.com/photo-1504680177321-2e6a879aac86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80); */
   background-size: cover;
   background-attachment: fixed;
@@ -37,7 +38,7 @@ section {
   width: 100%;
   overflow: hidden;
 }
-div{
+div {
   z-index: 2;
 }
 #home {
@@ -49,13 +50,36 @@ div{
   background-size: cover;
   height: 100vh;
 }
+#timer,
+#event_c {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+#time {
+  font-family: "Amaranth", sans-serif;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #ffffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(yellow, red);
+  /* background-image: url("./assets/images/fire.gif"); */
+  margin-top: 10px;
+  font-size: 22px;
+}
+
 #members {
   font-family: "Amaranth", sans-serif;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.logo img{
+.logo img {
   height: 50vh;
   /* margin-bottom: -10vh; */
   /* opacity: 0.7; */
@@ -90,7 +114,6 @@ div{
   transform: rotate(-8deg);
   font-family: "Water Brush", cursive;
 }
-
 
 .head-text {
   font-family: "Amaranth", sans-serif;
@@ -160,8 +183,8 @@ nav {
   /* text-shadow: 2px 2px 3px white; */
   /* -webkit-text-stroke: 1px white; */
   color: transparent;
-	-moz-background-clip: text;
-	-webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
   background-clip: text;
   background-image: url(./assets/images/fire.gif);
   background-size: cover;
@@ -201,7 +224,7 @@ footer a {
   body {
     overflow-x: hidden;
   }
-  .logo img{
+  .logo img {
     height: 30vh;
   }
   .main_text {
@@ -209,7 +232,6 @@ footer a {
     margin-top: 0;
   }
   .no-blur {
-
     backdrop-filter: none !important;
   }
 
@@ -273,7 +295,6 @@ footer a {
 
 /* nav bar style end */
 
-
 .college {
   /* background-color: white; */
   border-radius: 100%;
@@ -308,7 +329,7 @@ footer a {
   font-size: 70px !important;
 }
 
-.about-desc{
+.about-desc {
   font-size: 1.5rem;
   color: #fff;
   margin-top: 10%;
@@ -452,10 +473,10 @@ footer a {
 }
 
 /* fireflies start */
-html, body {
+html,
+body {
   height: 100%;
 }
-
 
 .firefly {
   position: fixed;
@@ -469,7 +490,8 @@ html, body {
   border-radius: 50%;
   z-index: 1;
 }
-.firefly::before, .firefly::after {
+.firefly::before,
+.firefly::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -2069,7 +2091,9 @@ html, body {
   }
 }
 @keyframes flash {
-  0%, 30%, 100% {
+  0%,
+  30%,
+  100% {
     opacity: 0;
     box-shadow: 0 0 0vw 0vw yellow;
   }
@@ -2081,59 +2105,58 @@ html, body {
 /* fireflies end */
 
 /* home canvas */
-canvas{
+canvas {
   position: absolute;
   top: 0;
   overflow-y: hidden;
   width: 100%;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 /* home canvas ends */
 
-
 .title {
-	font-family: "Roboto", sans-serif;
-	text-align: center;
-	color: #FFF;
-	/* display: flex; */
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	/* height: 100vh; */
-	letter-spacing: 1px;
-	line-height:2
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: #fff;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* height: 100vh; */
+  letter-spacing: 1px;
+  line-height: 2;
 }
 .rejuvenation {
   position: relative;
-	font-size: 10vw;
+  font-size: 10vw;
   /* font-size: 100px; */
   text-align: center;
-	text-transform: uppercase;
+  text-transform: uppercase;
   letter-spacing: 0.5rem;
   font-weight: 900;
 }
-.rejuvenation div{
-	background-image: url("./assets/images/fire.gif");
-	background-size: contain;
+.rejuvenation div {
+  background-image: url("./assets/images/fire.gif");
+  background-size: contain;
   /* filter: blur(5px); */
   letter-spacing: 0.5rem;
-	color: transparent;
+  color: transparent;
   background-clip: text;
-	-moz-background-clip: text;
-	-webkit-background-clip: text;
-	/* font-size: 10vw; */
-	/* margin: 10px 0; */
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  /* font-size: 10vw; */
+  /* margin: 10px 0; */
   position: absolute;
   width: 100%;
 }
-.rejuvenation::after{
+.rejuvenation::after {
   text-shadow: 2px 2px 10px black;
-    color: transparent;
-    content: "REJUVENATION";
+  color: transparent;
+  content: "REJUVENATION";
 }
 
-.motto{
+.motto {
   color: #ff5b38;
   font-size: 2.5rem;
   font-weight: bold;
@@ -2145,21 +2168,21 @@ canvas{
 /* styling my button */
 
 .white-mode {
-	text-decoration: none;
-	padding: 7px 10px;
-	background-color: #122;
-	border-radius: 3px;
-	color: #FFF;
-	transition: .35s ease-in-out;
-	position: absolute;
-	left: 15px;
-	bottom: 15px;
-	font-family: "Montserrat";
+  text-decoration: none;
+  padding: 7px 10px;
+  background-color: #122;
+  border-radius: 3px;
+  color: #fff;
+  transition: 0.35s ease-in-out;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  font-family: "Montserrat";
 }
 
 .white-mode:hover {
-	background-color: #FFF;
-	color: #122;
+  background-color: #fff;
+  color: #122;
 }
 
 .rotatingText {
@@ -2200,15 +2223,15 @@ canvas{
 
 .rotatingText-adjective:nth-of-type(1) {
   -webkit-animation: rotate-text-up 1.5s 0.75s;
-          animation: rotate-text-up 1.5s 0.75s;
+  animation: rotate-text-up 1.5s 0.75s;
 }
 .rotatingText-adjective:nth-of-type(2) {
   -webkit-animation: rotate-text-up 1.5s 2s;
-          animation: rotate-text-up 1.5s 2s;
+  animation: rotate-text-up 1.5s 2s;
 }
 .rotatingText-adjective:nth-of-type(3) {
   -webkit-animation: fade-text-in 1.5s 3.25s forwards;
-          animation: fade-text-in 1.5s 3.25s forwards;
+  animation: fade-text-in 1.5s 3.25s forwards;
 }
 
 @-webkit-keyframes rotate-text-up {
@@ -2216,7 +2239,8 @@ canvas{
     transform: translate3d(0, 80px, 0);
     opacity: 0;
   }
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(0, 0, 0);
     opacity: 1;
   }
@@ -2231,7 +2255,8 @@ canvas{
     transform: translate3d(0, 80px, 0);
     opacity: 0;
   }
-  20%, 80% {
+  20%,
+  80% {
     transform: translate3d(0, 0, 0);
     opacity: 1;
   }
@@ -2245,7 +2270,8 @@ canvas{
     opacity: 0;
     transform: translate3d(0, 80px, 0);
   }
-  50%, 100% {
+  50%,
+  100% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
@@ -2255,7 +2281,8 @@ canvas{
     opacity: 0;
     transform: translate3d(0, 80px, 0);
   }
-  50%, 100% {
+  50%,
+  100% {
     opacity: 1;
     transform: translate3d(0, 0, 0);
   }
@@ -2328,6 +2355,11 @@ canvas{
 }
 
 @media screen and (max-width: 768px) {
+  #time {
+    height: 80.5px;
+    width: 80.5px;
+    font-size: 20px;
+  }
   .card-title {
     font-size: 20px !important;
   }
@@ -2339,13 +2371,13 @@ canvas{
     margin: 0;
   }
 }
-.convenor{
+.convenor {
   text-align: center;
 }
-.convenor img{
+.convenor img {
   max-width: 18rem;
 }
-.convenor-owl{
+.convenor-owl {
   max-width: 80vw !important;
   margin: 0 auto;
 }
@@ -2382,7 +2414,7 @@ canvas{
   gap: 10px;
 }
 
-.card{
+.card {
   align-items: center;
 }
 
@@ -2443,12 +2475,12 @@ canvas{
   z-index: 2;
 }
 
-.convenor img{
+.convenor img {
   border-bottom-left-radius: 50%;
-  border-top-right-radius: 50%; 
+  border-top-right-radius: 50%;
 }
 
-.principal-row{
+.principal-row {
   max-width: 50vw;
   display: flex;
   flex-direction: row;
@@ -2456,9 +2488,8 @@ canvas{
   align-items: center;
 }
 @media (max-width: 900px) {
-  
-.principal-row{
-  flex-direction: column;
-  max-width: 100vw;
-}
+  .principal-row {
+    flex-direction: column;
+    max-width: 100vw;
+  }
 }
