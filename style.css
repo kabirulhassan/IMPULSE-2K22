@@ -4,8 +4,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+
+@font-face {
+  font-family: Freshbot;
+  src: url(./assets/FRESHBOT.TTF);
+}
+
 html {
   scroll-behavior: smooth;
+}
+*{
+  color: white;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -118,7 +127,7 @@ div{
 
 nav {
   backdrop-filter: blur(5px);
-  font-family: "Amaranth", sans-serif;
+  font-family: "Freshbot", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -151,7 +160,7 @@ nav {
 .nav-links a {
   text-decoration: none;
   color: white;
-  font-size: 22px;
+  font-size: 30px;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -303,9 +312,9 @@ footer a {
   text-align: center;
   justify-content: center;
   margin: 0;
-  font-family: "Amaranth" !important;
+  font-family: "Freshbot", sans-serif;
   letter-spacing: 5px;
-  font-size: 70px !important;
+  font-size: 80px !important;
 }
 
 .about-desc{
@@ -2367,15 +2376,7 @@ canvas{
   justify-content: center;
   margin: 20px;
 }
-.display-4 {
-  text-shadow: 2px 2px 5px black;
-  text-align: center;
-  justify-content: center;
-  margin: 0;
-  font-family: "among-us" !important;
-  letter-spacing: 5px;
-  font-size: 70px !important;
-}
+
 #event_card {
   display: flex;
   justify-content: center;
@@ -2421,17 +2422,10 @@ canvas{
   margin: 20px;
 }
 .display-5 {
+  /* font-family: "Freshbot", sans-serif; */
   text-shadow: 2px 2px 5px black;
 }
-.display-4 {
-  text-shadow: 2px 2px 5px black;
-  text-align: center;
-  justify-content: center;
-  margin: 0;
-  font-family: "among-us" !important;
-  letter-spacing: 5px;
-  font-size: 70px !important;
-}
+
 
 #tchr {
   height: 250px;
@@ -2461,4 +2455,38 @@ canvas{
   flex-direction: column;
   max-width: 100vw;
 }
+.contact{
+  flex-direction: column !important;
+}
+}
+
+.location iframe{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.location{
+  min-width: 45vw;
+  min-height: 100%;
+}
+
+.contact{
+  display: flex;
+  flex-direction: row;
+  min-height: 50vh;
+}
+
+.contact div{
+  min-width: 45vw;
+  margin: 10px;
+}
+
+.contact-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #fff solid 2px;
+  border-radius: 10px;
 }
