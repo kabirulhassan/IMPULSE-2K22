@@ -7,7 +7,9 @@
 html {
   scroll-behavior: smooth;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 
 body {
   background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)), url("https://images.unsplash.com/photo-1504680177321-2e6a879aac86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
@@ -46,6 +48,12 @@ div{
   background-position: center;
   background-size: cover;
   height: 100vh;
+}
+#members {
+  font-family: "Amaranth", sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .logo img{
   height: 50vh;
@@ -148,13 +156,13 @@ nav {
   letter-spacing: 2px;
 }
 
-.nav-logo :hover,
 .nav-links :hover {
   /* text-shadow: 2px 2px 3px white; */
   /* -webkit-text-stroke: 1px white; */
   color: transparent;
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
+  background-clip: text;
   background-image: url(./assets/images/fire.gif);
   background-size: cover;
   background-blend-mode: soft-light;
@@ -300,6 +308,12 @@ footer a {
   font-size: 70px !important;
 }
 
+.about-desc{
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 10%;
+  padding: 0 5%;
+}
 /* footer */
 .footer {
   padding-top: 35px;
@@ -2072,7 +2086,7 @@ canvas{
   top: 0;
   overflow-y: hidden;
   width: 100%;
-  opacity: 0.5;
+  opacity: .5;
 }
 
 /* home canvas ends */
@@ -2086,7 +2100,7 @@ canvas{
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	height: 100vh;
+	/* height: 100vh; */
 	letter-spacing: 1px;
 	line-height:2
 }
@@ -2105,6 +2119,7 @@ canvas{
   /* filter: blur(5px); */
   letter-spacing: 0.5rem;
 	color: transparent;
+  background-clip: text;
 	-moz-background-clip: text;
 	-webkit-background-clip: text;
 	/* font-size: 10vw; */
@@ -2148,16 +2163,16 @@ canvas{
 }
 
 .rotatingText {
-  align-items: center;
-  display: flex;
+  align-items: center !important;
   height: 5vh;
   /* height: 100vh; */
   text-align: center;
 }
 
 .rotatingText-content {
+  text-align: center !important;
   position: relative;
-  width: 100%;
+  margin: auto 0;
 }
 @media (min-width: 768px) {
   .rotatingText-description {
@@ -2169,16 +2184,18 @@ canvas{
   animation-iteration-count: infinite;
   font-family: "Open Sans", sans-serif;
   font-size: 3rem;
-  left: 0;
+  /* left: 0; */
   margin-bottom: 0;
   margin-top: 10px;
+  width: 100%;
   opacity: 0;
   position: absolute;
-  right: 0;
+  /* right: 0; */
   text-align: center;
   text-transform: uppercase;
   top: 0;
   letter-spacing: 1.5rem;
+  text-indent: 1.5rem;
 }
 
 .rotatingText-adjective:nth-of-type(1) {
@@ -2243,9 +2260,205 @@ canvas{
     transform: translate3d(0, 0, 0);
   }
 }
-.twitter {
-  bottom: 0;
-  position: fixed;
-  right: 0;
-  width: 50px;
+
+#events {
+  height: 100vh;
+  font-family: "Amaranth", sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.owl-carousel .owl-nav div.owl-prev,
+.owl-carousel .owl-nav div.owl-next {
+  color: white;
+  font-size: 30px;
+  margin-top: -20px;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  line-height: 39px;
+  opacity: 0;
+  border: none;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+.owl-carousel .owl-nav div.owl-prev {
+  left: 10%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+}
+.owl-carousel .owl-nav div.owl-next {
+  right: 10%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+}
+.owl-carousel:hover .owl-nav div.owl-next {
+  right: -2%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  opacity: 1;
+}
+.owl-carousel:hover .owl-nav div.owl-prev {
+  left: -2%;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -o-transition: 0.4s;
+  -ms-transition: 0.4s;
+  opacity: 1;
+}
+.owl-carousel:hover .owl-nav div.owl-next:hover,
+.owl-carousel:hover .owl-nav div.owl-prev:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  font-size: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .card-title {
+    font-size: 20px !important;
+  }
+  .card-text {
+    font-size: 17px !important;
+  }
+  .card-text {
+    min-height: 75px !important;
+    margin: 0;
+  }
+}
+.convenor{
+  text-align: center;
+}
+.convenor img{
+  max-width: 18rem;
+}
+.convenor-owl{
+  max-width: 80vw !important;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .card-title {
+    font-size: 18px !important;
+  }
+  .card-text {
+    min-height: 80px !important;
+    margin: 0;
+    font-size: 16px !important;
+  }
+}
+
+.heading-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.display-4 {
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  font-family: "among-us" !important;
+  letter-spacing: 5px;
+  font-size: 70px !important;
+}
+#event_card {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.card{
+  align-items: center;
+}
+
+.card,
+.card-img {
+  padding: 5px;
+  border-radius: 5%;
+}
+
+.card-img-top {
+  border: #ffffff solid 3px;
+  border-radius: 5%;
+}
+.card-title,
+.card-text {
+  text-shadow: 2px 2px 5px black;
+  color: white;
+  font-size: 22px;
+}
+.card-text {
+  min-height: 70px !important;
+}
+.card-img {
+  height: 350px;
+}
+
+.card-body a {
+  color: #ffffff !important;
+  text-decoration: none !important;
+}
+.heading-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.display-5 {
+  text-shadow: 2px 2px 5px black;
+}
+.display-4 {
+  text-shadow: 2px 2px 5px black;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  font-family: "among-us" !important;
+  letter-spacing: 5px;
+  font-size: 70px !important;
+}
+
+#tchr {
+  height: 250px;
+  width: 250px;
+  border: white solid 2px;
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%;
+  padding: 0px !important;
+  z-index: 2;
+}
+
+.convenor img{
+  border-bottom-left-radius: 50%;
+  border-top-right-radius: 50%; 
+}
+
+.principal-row{
+  max-width: 50vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  
+.principal-row{
+  flex-direction: column;
+  max-width: 100vw;
+}
 }
