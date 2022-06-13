@@ -66,6 +66,7 @@ $(document).ready(function () {
   const openmfButtons = document.querySelectorAll("[data-mf-target]");
   const closemfButtons = document.querySelectorAll("[data-close-button]");
   const overlay = document.getElementById("overlay");
+  
 
   openmfButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -92,12 +93,15 @@ $(document).ready(function () {
     if (mf == null) return;
     mf.classList.add("active");
     overlay.classList.add("active");
+    $("body").css("overflow", "hidden");
+    $("body").add("backdrop");
   }
 
   function closemf(mf) {
     if (mf == null) return;
     mf.classList.remove("active");
     overlay.classList.remove("active");
+    $("body").css("overflow", "auto");
   }
 });
 // Some random colors
