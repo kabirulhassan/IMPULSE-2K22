@@ -75,7 +75,7 @@
   <div class="firefly"></div>
   <div class="firefly"></div>
   <section id="home" style="overflow: hidden">
-    <div class="container">
+    <div class="container container-home">
       <h2 class="official">Bengal Institute of Technology<br>presents</h2>
       <div class="logo">
         <img src="./assets/images/impulse-logo.png" alt="">
@@ -113,6 +113,11 @@
         showcase their potential and creativity in the cultural events & finally the evening is culminated by the
         performance of renowned guest artists which mesmerizes the audience and gives them an evening to remember
       </p>
+      <div class="event-date">
+        <h2 class="change"><span class="changing"></span></h2>
+        <p>5th and 6th July, 2022</p>
+        <!-- <p>Venue : Mohit Moitra Mancha,Raja Manindra Rd, Tala, Paikpara, Kolkata, West Bengal 700037</p> -->
+      </div>
     </div>
 
   </section>
@@ -122,35 +127,97 @@
       <div class="heading-2">
         <div class="display-4 head-text">Events</div>
       </div>
+      <div id="overlay"></div>
+      <div class="mf" id="voi">
+        <div class="mf-header">
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="abc event-details">
+          <img src="./assets/Voice Of Impulse.jpg" alt="voi" />
+          <h2>Voice of Impulse</h2>
+          <p>
+            Participants sang out their feelings long before they were able to speak their thoughts. The human voice is presumed to be the original music instrument and there is no human culture, no matter how remote or isolated, that does not sing. So, we are here with Voice of Impulse the most happening event of Impulse, to sing their heart out and create a soothing atmosphere
+          </p>
+        </div>
+      </div>
+      <div class="mf" id="bob">
+        <div class="mf-header">
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="abc event-details">
+          <img src="./assets/Battle of beats2k22_front.png" alt="" />
+          <h2>Battle of Beats</h2>
+          <p>
+            Group Dance Competition. So with rhythm in your veins and beats in your hearts, join us in the battle of art.
+          </p>
+        </div>
+      </div>
+      <div class="mf" id="rof">
+        <div class="mf-header">
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="abc event-details">
+          <img src="./assets/1.png" alt="Kabirul Hassan" />
+          <h2>Ramp on Fire</h2>
+          <p>
+            “Lights, Camera, Sound … are you ready to set the stage on fire!”<br>
+            Fashion is the amalgamation of confidence and attire, just be yourself and set the fashion with your style and enjoy every moment of applause.
+          </p>
+        </div>
+      </div>
+      <div class="mf" id="fp">
+        <div class="mf-header">
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="abc event-details">
+          <img src="./assets/Face_Pulse.jpeg" alt="Kabirul Hassan" />
+          <h2>Face-Pulse</h2>
+          <p>
+            Participants sang out their feelings long before they were able to speak their thoughts. The human voice is presumed to be the original music instrument and there is no human culture, no matter how remote or isolated, that does not sing. So, we are here with Voice of Impulse the most happening event of Impulse, to sing their heart out and create a soothing atmosphere
+          </p>
+        </div>
+      </div>
+      <div class="mf" id="drm">
+        <div class="mf-header">
+          <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="abc event-details">
+          <img src="./assets/Moshla-Chai.jpg" alt="Kabirul Hassan" />
+          <h2>Drama</h2>
+          <p>
+            Drama is the language of portraying one’s thought in the minds of the thoughtful audience. Our own drama club 'Hiji Bij Bij' organizes several plays every year which not only entertains the audience but also enriches them with the creativity and positive thoughts and messages.
+          </p>
+        </div>
+      </div>
       <div class="owl1 owl-carousel owl-theme">
-        <div id="event_card" class="card bg-dark text-white">
+        <div id="event_card" class="card bg-dark text-white" data-mf-target="#voi">
           <img src="./assets/Voice Of Impulse.jpg" class="card-img" />
           <h3>Voice of Impulse</h3>
         </div>
-        <div id="event_card" class="card bg-dark text-white">
+        <div id="event_card" class="card bg-dark text-white" data-mf-target="#bob">
           <img src="./assets/Battle of beats2k22_front.png" class="card-img" />
           <h3>Battle of Beats</h3>
         </div>
-        <div id="event_card" class="card bg-dark text-white">
+        <div id="event_card" class="card bg-dark text-white" data-mf-target="#rof">
           <img src="./assets/1.png" class="card-img" />
           <h3>Ramp on Fire</h3>
         </div>
-        <div id="event_card" class="card bg-dark text-white">
+        <div id="event_card" class="card bg-dark text-white" data-mf-target="#drm">
           <img src="./assets/Moshla-Chai.jpg" class="card-img" />
           <h3>Drama (Moshla-Chai)</h3>
         </div>
-        <div id="event_card" class="card bg-dark text-white">
+        <div id="event_card" class="card bg-dark text-white" data-mf-target="#fp">
           <img src="./assets/Face_Pulse.jpeg" class="card-img" />
           <h3>Face-Pulse</h3>
         </div>
-        <div id="event_card" class="card bg-dark text-white">
+        <!-- <div id="event_card" class="card bg-dark text-white" data-mf-target="#rt">
           <img src="#" class="card-img" />
           <h3>Recitation</h3>
         </div>
-        <div id="event_card" class="card bg-dark text-white">
+        <div id="event_card" class="card bg-dark text-white" data-mf-target="#cd">
           <img src="#" class="card-img" />
           <h3>Couple dance</h3>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -164,16 +231,16 @@
       </div>
       <div class="owl3 owl-carousel owl-theme convenor-owl">
         <div class="card bg-transparent convenor">
-          <img src="./assets/NabanitaDas.jpg" class="card-img-top" />
+          <img src="./assets/ShovonNandi.jpg" class="card-img-top" />
           <div class="card-body">
-            <h5 class="card-title">Prof Nabanita Das</h5>
+            <h5 class="card-title">Prof Shovon Nandi</h5>
             <p class="card-text">Convenor</p>
           </div>
         </div>
         <div class="card bg-transparent convenor">
-          <img src="./assets/ShovonNandi.jpg" class="card-img-top" />
+          <img src="./assets/NabanitaDas.jpg" class="card-img-top" />
           <div class="card-body">
-            <h5 class="card-title">Prof Shovon Nandi</h5>
+            <h5 class="card-title">Prof Nabanita Das</h5>
             <p class="card-text">Convenor</p>
           </div>
         </div>
@@ -258,11 +325,13 @@
           </div>
           <div class="contact">
             <div class="location">
+              <h1>Event Venue</h1>
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14732.474447011271!2d88.3817264!3d22.6120455!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf01fd00a505fde18!2sMohit%20Moitra%20Mancha!5e0!3m2!1sen!2sin!4v1655046247904!5m2!1sen!2sin"
                 allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="contact-details">
+              <h1>College</h1>
               <p>Address: 1 no. Govt Colony(on Basanti Highway),<br>
               Kolkata-700150, West Bengal, India<br>
               Phone no: +91 33-23458004<br></p>
