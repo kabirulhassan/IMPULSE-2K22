@@ -2544,3 +2544,22 @@ a:hover{
 .hidden{
   visibility: hidden;
 }
+
+.event-date{
+  font-size:3rem;
+  color: white;
+  font-family: "Freshbot", sans-serif;
+}
+.event-date h2{
+  font-size:3.5rem;
+  color: white;
+  font-family: "Freshbot", sans-serif;
+}
+.event-date p{
+  padding: 15px;
+  border: #fff solid 2px;
+  border-radius: 15px 5px 15px 5px;
+  width: fit-content;
+  margin: 0 auto;
+  line-height: 0.5;
+}

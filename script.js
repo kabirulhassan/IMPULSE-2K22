@@ -51,6 +51,17 @@ const navSlide = () => {
 };
 
 $(document).ready(function () {
+
+  // Changing Text Animation
+  var type = new Typed(".changing", {
+    strings: [
+      "#STAY_IMPULSIVE ON"
+    ],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true,
+  });
+
   navSlide();
   const openmfButtons = document.querySelectorAll("[data-mf-target]");
   const closemfButtons = document.querySelectorAll("[data-close-button]");
