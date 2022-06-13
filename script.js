@@ -139,7 +139,7 @@ class Particle {
     this.canvas = canvas;
     this.center = {
       x: $(window).width() / 2,
-      y: $(window).height() / 2,
+      y: $("#home").height() / 2,
     };
 
     this.point_of_attraction = {
@@ -166,9 +166,9 @@ class Particle {
     this.w = $(window).width();
     this.h = $(window).height();
     this.radius = random > 0.2 ? Math.random() * 1 : Math.random() * 3;
-    this.color = random > 0.2 ? "#694FB9" : "#9B0127";
+    this.color = random > 0.2 ? "#3CFBFF" : "#9B0127";
     this.radius = random > 0.8 ? Math.random() * 2.2 : this.radius;
-    this.color = random > 0.8 ? "#3CFBFF" : this.color;
+    this.color = random > 0.8 ? "#f38600" : this.color;
   }
 
   calculateDistance(v1, v2) {
