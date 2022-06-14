@@ -133,10 +133,15 @@ tela.height = $("#home").height();
 $("body").append(tela);
 
 function resize() {
+  console.log("resize");
   $("#canvas").outerHeight(
     $(window).height() -
       $("#canvas").offset().top -
       Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight())
+  );
+  $("#canvas").outerWidth(
+    $(window).width() - $("#canvas").offset().left - 
+    Math.abs($("#canvas").outerWidth(true) - $("#canvas").outerWidth())
   );
 }
 $(document).ready(function () {
