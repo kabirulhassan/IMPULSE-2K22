@@ -151,12 +151,14 @@ section {
 }
 
 nav {
+  background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   font-family: "Freshbot", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 7vh;
+  max-height: fit-content;
   position: -webkit-sticky;
   /* Safari */
   position: fixed;
@@ -231,7 +233,7 @@ footer a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   body {
     overflow-x: hidden;
   }
@@ -417,6 +419,7 @@ footer a {
 #overlay.active {
   opacity: 1;
   pointer-events: all;
+  z-index: 10;
 }
 
 .abc {
@@ -2415,6 +2418,7 @@ canvas {
 
 #event_card {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   gap: 10px;
   background-color: rgba(0, 0, 0, 0.5) !important;
@@ -2422,6 +2426,30 @@ canvas {
 #event_card:hover {
   background-color: rgba(255, 255, 255, 0.3) !important;
   cursor: pointer;
+  box-shadow: #000 0 0 10px;
+  text-shadow: #000 0 0 5px;
+}
+
+
+
+#event_card button{
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 50px;
+  width: 70%;
+  font-size: 1.5rem;
+  border: 1px solid #fff;
+}
+#event_card button:hover{
+  background-color: black;
+  transition: ease-in;
+  box-shadow: #000 0 0 10px;
+}
+#event_card a{
+  position: absolute;
+  top: 270px;
+  width: 100%;
+  height: min-content;
 }
 .card {
   align-items: center;

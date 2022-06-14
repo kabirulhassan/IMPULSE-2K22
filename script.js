@@ -1,5 +1,5 @@
 //Timer
-var finalDate = new Date("Jul 4, 2022 16:00:00").getTime();
+var finalDate = new Date("Jul 5, 2022 16:00:00").getTime();
 var x = setInterval(function () {
   var now = new Date().getTime();
   var distance = finalDate - now;
@@ -133,10 +133,15 @@ tela.height = $("#home").height();
 $("body").append(tela);
 
 function resize() {
+  console.log("resize");
   $("#canvas").outerHeight(
     $(window).height() -
       $("#canvas").offset().top -
       Math.abs($("#canvas").outerHeight(true) - $("#canvas").outerHeight())
+  );
+  $("#canvas").outerWidth(
+    $(window).width() - $("#canvas").offset().left - 
+    Math.abs($("#canvas").outerWidth(true) - $("#canvas").outerWidth())
   );
 }
 $(document).ready(function () {
