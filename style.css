@@ -503,7 +503,7 @@ body {
   animation: ease 200s alternate infinite;
   pointer-events: none;
   border-radius: 50%;
-  z-index: 1;
+  z-index: -1;
 }
 .firefly::before,
 .firefly::after {
@@ -2126,6 +2126,7 @@ canvas {
   /* overflow: hidden; */
   width: 100%;
   opacity: 0.5;
+  z-index: -9;
 }
 
 /* home canvas ends */
