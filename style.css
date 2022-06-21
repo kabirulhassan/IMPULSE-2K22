@@ -2128,7 +2128,32 @@ canvas {
   opacity: 0.5;
   z-index: -9;
 }
+.coordinators{
+  max-width: 80vw;
+}
+.coordinator{
+  background-color: rgba(0, 0, 0, 0.5);
+  min-height: 40vh;
+  border: rgba(255, 255, 255, 0.3) 3px solid;
+  border-radius: 20px !important;
+  display: flex;
+  justify-content: space-between;
+}
+.coordinator:hover{
+  border: #fff 3px solid;
+}
+.coordinator div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 30vh;
+}
+@media screen and (max-width: 768px) {
+  .coordinator{
+    min-height: 35vh;
+  }
 
+}
 /* home canvas ends */
 
 .title {
