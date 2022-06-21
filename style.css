@@ -2152,7 +2152,9 @@ canvas {
   .coordinator{
     min-height: 35vh;
   }
-
+  .coordinators{
+    max-width: 95vw;
+  }
 }
 /* home canvas ends */
 
