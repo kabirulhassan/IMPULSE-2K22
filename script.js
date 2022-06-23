@@ -1,3 +1,15 @@
+// loader
+
+const loader = ()=>{
+  document.getElementById("loader-video").play();
+  setTimeout(showPage, 4000);
+}
+
+const showPage = () => {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("page-content").style.display = "block";
+}
+
 //Timer
 var finalDate = new Date("Jul 5, 2022 16:00:00").getTime();
 var x = setInterval(function () {
