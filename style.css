@@ -2706,7 +2706,7 @@ a:hover{
   max-width: 18rem;
   margin: 3rem;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .sponsors{
     display: flex;
     flex-direction: column;
