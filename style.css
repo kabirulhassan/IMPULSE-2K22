@@ -2129,6 +2129,7 @@ canvas {
   width: 100%;
   opacity: 0.5;
   z-index: -9;
+  min-height: 105vh;
 }
 .coordinators{
   max-width: 80vw;
