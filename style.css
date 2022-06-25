@@ -2698,6 +2698,8 @@ a:hover{
 .sponsors{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .sponsor{
   display: flex;
@@ -2705,12 +2707,6 @@ a:hover{
   justify-content: space-between;
   max-width: 18rem;
   margin: 3rem;
-}
-@media screen and (max-width: 1000px) {
-  .sponsors{
-    display: flex;
-    flex-direction: column;
-  }
 }
 .sponsor h3{
   font-family: "Amaranth", sans-serif;
