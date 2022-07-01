@@ -2796,14 +2796,16 @@ a:hover{
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
   align-items: center;
 }
 
 .star img{
   max-height: 70vh;
+  max-width: 90vw;
   border-radius: 30px;
 }
 .star{
+  margin-top: 3rem;
   width: fit-content;
 }
