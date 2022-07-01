@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Water+Brush&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
 @font-face {
   font-family: Freshbot;
@@ -2335,7 +2336,7 @@ canvas {
 }
 
 #events {
-  height: 100vh;
+  min-height: 100vh;
   font-family: "Amaranth", sans-serif;
   font-size: 1rem;
   background-repeat: no-repeat;
@@ -2729,4 +2730,80 @@ a:hover{
 }
 .round{
   border-radius: 50%;
+}
+
+.neonText {
+  width: fit-content;
+  margin: 0 auto;
+  font-family: 'Sacramento', cursive;
+  color: #fff;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #ffa200,
+    0 0 82px #ffa200,
+    0 0 92px #ffa200,
+    0 0 102px #ffa200,
+    0 0 151px #ffa200;
+  animation: pulsate 1.5s infinite alternate;
+  
+}
+.neonBorder{
+  border: 0.2rem solid #fff;
+  border-radius: 2rem;
+  padding: 0.4em;
+  box-shadow: 0 0 .2rem #fff,
+            0 0 .2rem #fff,
+            0 0 2rem #ffa200,
+            0 0 0.8rem #ffa200,
+            0 0 2.8rem #ffa200,
+            inset 0 0 1.3rem #ffa200; 
+}
+@keyframes pulsate {
+    
+  100% {
+
+      text-shadow:
+      0 0 4px #fff,
+      0 0 11px #fff,
+      0 0 19px #fff,
+      0 0 40px #ffa200,
+      0 0 80px #ffa200,
+      0 0 90px #ffa200,
+      0 0 100px #ffa200,
+      0 0 150px #ffa200;
+  
+  }
+  
+  0% {
+
+    text-shadow:
+    0 0 2px #fff,
+    0 0 4px #fff,
+    0 0 6px #fff,
+    0 0 10px #ffa200,
+    0 0 45px #ffa200,
+    0 0 55px #ffa200,
+    0 0 70px #ffa200,
+    0 0 80px #ffa200;
+
+}
+}
+
+.star-performance{
+  margin-top: 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.star img{
+  max-height: 70vh;
+  border-radius: 30px;
+}
+.star{
+  width: fit-content;
 }
